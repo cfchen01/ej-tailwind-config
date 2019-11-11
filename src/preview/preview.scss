@@ -50,6 +50,20 @@ dd {
   }
 }
 
+.sec-font-sizes {
+  p {
+    @apply truncate;
+
+    &:first-child {
+      @apply bg-gray-light;
+    }
+
+    &:last-child {
+      @apply bg-gray-lighter;
+    }
+  }
+}
+
 .sec-container {
   & h3 {
     @apply font-mono;
