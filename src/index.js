@@ -143,6 +143,12 @@ module.exports = {
       56: '224px',
       64: '256px',
     },
+    borderRadius: {
+      none: '0',
+      sm: '2px',
+      default: '4px',
+      full: '9999px',
+    },
     container: {
       center: true,
       padding: '20px',

@@ -3,8 +3,8 @@
     <h1>EJ Tailwind Config</h1>
   </header>
   <!-- Colors -->
-  <section class="sec-colors">
-    <h2>Colors</h2>
+  <section class="sec-colors" :class="borderRadiusClass">
+    <h2 class="flex items-center">Colors (Border Radius: <label v-for="val of ['none', 'sm', 'default', 'full']" :class="val === borderRadius ? 'active' : ''"><input v-model="borderRadius" type="radio" :value="val"><code>{{ val }}</code></label>)</h2>
     <div class="flex flex-wrap items-start" style="width: 800px;">
       <h3>Basic</h3>
       <div class="color"><i class="bg-white"></i><code>white</code></div>

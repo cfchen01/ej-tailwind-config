@@ -25,6 +25,22 @@ dd {
 }
 
 .sec-colors {
+  @apply rounded-none #{!important};
+
+  h2 {
+    label {
+      @apply text-gray-darker inline-flex items-center ml-4;
+
+      &.active {
+        @apply text-black;
+      }
+
+      code {
+        @apply ml-2;
+      }
+    }
+  }
+
   & h3 {
     @apply flex-none w-full;
 
@@ -37,7 +53,7 @@ dd {
     @apply flex-auto w-1/3 flex items-center;
 
     & i {
-      @apply flex-none w-12 h-12 rounded shadow;
+      @apply flex-none w-12 h-12 shadow;
 
       &.shadow-none {
         @apply shadow-none;
@@ -47,6 +63,18 @@ dd {
     & code {
       @apply flex-none px-4;
     }
+  }
+
+  &.rounded-sm .color i {
+    @apply rounded-sm;
+  }
+
+  &.rounded .color i {
+    @apply rounded;
+  }
+
+  &.rounded-full .color i {
+    @apply rounded-full;
   }
 }
 
