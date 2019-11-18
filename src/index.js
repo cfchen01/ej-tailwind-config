@@ -46,7 +46,6 @@ module.exports = {
         default: '#8e45ff',
       },
     },
-    fill: theme => theme('colors'),
     fontFamily: {
       sans: [
         '-apple-system',
