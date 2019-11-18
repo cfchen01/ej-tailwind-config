@@ -149,9 +149,5 @@ module.exports = {
       default: '4px',
       full: '9999px',
     },
-    container: {
-      center: true,
-      padding: '20px',
-    },
   },
 }
