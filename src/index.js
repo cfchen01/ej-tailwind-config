@@ -46,6 +46,11 @@ module.exports = {
         default: '#8e45ff',
       },
     },
+    fill: theme => ({
+      ...theme('colors'),
+
+      current: 'currentColor',
+    }),
     fontFamily: {
       sans: [
         '-apple-system',
@@ -147,6 +152,9 @@ module.exports = {
       sm: '2px',
       default: '4px',
       full: '9999px',
+    },
+    boxShadow: {
+      default: '0 0 8px rgba(0, 0, 0, 0.15)',
     },
   },
 }
